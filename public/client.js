@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                   postit: postit
                                   }
                   );
+    $("#input-text").val("");
+    $("#input-title").val("");
   })
 
   $("button.edit").click(function(e){
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // draw line received from server
   socket.on('create_postit', function (data) {
     var postit = data.postit;
-    var html = "<li><a><h2>"+ postit.title +"</h2><p>" +postit.text+"</p></a></li><button class='edit'>Edit</button>"
+    var html = "<li><a><h2>"+ postit.title +"</h2><p>" +postit.text+"</p></a></li>"
     $('#board').append(html)
   });
 

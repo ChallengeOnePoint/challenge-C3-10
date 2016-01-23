@@ -18,7 +18,7 @@ io.on('connection', function (socket) {
    // first send the history to the new client
    for (var i in postit_history) {
     socket.emit('create_postit', {
-                                    postit: postit_history[i], id: i } );
+      postit: postit_history[i], id: i } );
    }
 
    // add handler for message type "draw_line".
