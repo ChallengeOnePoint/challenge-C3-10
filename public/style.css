@@ -118,5 +118,13 @@ form{
   color:black;
 }
 button{
-
+  padding: 5px 25px 5px 25px;
+  color: #f4f4f4;
+  background: #ffbb00;
+  font-weight: bold;
+  margin-left: 40px;
+  font-family: Arial,sans-serif;
+  border: solid 0 #e3edf4;
+  border-bottom: 2px solid #CA9400;
+  border-radius: 4px;
 }
